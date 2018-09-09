@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/users_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@color/common_google_signin_btn_text_light_disabled"
+    android:orientation="vertical"
+    android:padding="0dp"
+    android:paddingBottom="4dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/friendUser_single_image"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:adjustViewBounds="false"
+        app:srcCompat="@mipmap/add_btn" />
+
+    <TextView
+        android:id="@+id/friendUser_single_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/friendUser_single_image"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_toEndOf="@+id/friendUser_single_image"
+        android:layout_toRightOf="@+id/friendUser_single_image"
+        android:padding="2dp"
+        android:text="Display Name"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/friendUser_single_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/friendUser_single_name"
+        android:layout_alignStart="@+id/friendUser_single_name"
+        android:layout_below="@+id/friendUser_single_name"
+        android:layout_marginTop="5dp"
+        android:padding="2dp"
+        android:text="Status" />
+
+    <TextView
+        android:id="@+id/friendUser_mobile_Nbmr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/friendUser_single_image"
+        android:layout_alignLeft="@+id/friendUser_single_status"
+        android:layout_alignStart="@+id/friendUser_single_status"
+        android:layout_below="@+id/friendUser_single_status"
+        android:layout_margin="0dp"
+        android:layout_marginBottom="3dp"
+        android:layout_toEndOf="@+id/user_single_contact_info"
+        android:text="Mobile" />
+
+    <TextView
+        android:id="@+id/user_single_contact_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/friendUser_single_image"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:text="Contact Info." />
+
+
+</RelativeLayout>
